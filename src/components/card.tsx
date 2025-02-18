@@ -1,6 +1,7 @@
 import { Shareicon } from "../icons/shareicon";
 import { Trashicon } from "../icons/trashicon";
 
+
 interface Cardprops {
     title: string;
     link: string;
@@ -15,11 +16,14 @@ const extractYouTubeId = (url: string): string | null => {
 
 export const Cardcomponent = (props: Cardprops) => {
     return (
+        
         <div className="bg-white max-w-72 m-10 rounded-xl min-h-56">
             <div className="flex justify-between pt-3 px-3">
                 <div className="flex items-center">
+                    <a href={props.link} target="_blank">
                     <div><Shareicon /></div>
-                    <div className="text-sm">{props.title}</div>
+                    </a>
+                     <div className="text-sm">{props.title}</div>
                 </div>
                 <div className="flex text-gray-600 items-center">
                     <div className="pr-3"><Trashicon /></div>
