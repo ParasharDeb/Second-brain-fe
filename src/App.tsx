@@ -9,10 +9,10 @@ import { Shareicon } from './icons/shareicon'
 
 
 function App() {
-  const [showmodal,setshowmodal]=useState(false);
+  const [showmodal,setshowmodal]=useState(true);
   return (
     <div>
-    <CreateContentModal open={showmodal} onClose={()=>{setshowmodal(true)}}/>
+    <CreateContentModal open={showmodal} onClose={()=>{setshowmodal(false)}}/>
     <div className='h-screen bg-yellow-200 '>
     <div className='flex justify-center m-10 space-x-6   '>
       <Button varient='primary' text='Create content' starticon={<Plusicon/>} onClick={()=>setshowmodal(true)}/>

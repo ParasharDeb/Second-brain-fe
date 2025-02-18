@@ -13,7 +13,7 @@ const varientstyles={
 const defaultstyles="px-4 py-2 rounded-lg font-normal flex items-center "
 export const Button=(props:Buttonprops)=>{
     return(
-    <button className={varientstyles[props.varient]+" "+defaultstyles} >
+    <button className={varientstyles[props.varient]+" "+defaultstyles} onClick={props.onClick}>
         {props.starticon}{props.text}
     </button>
     )

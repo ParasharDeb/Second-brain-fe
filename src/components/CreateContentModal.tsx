@@ -1,6 +1,6 @@
 import { Closeicon } from "../icons/closeicon"
-import { Button } from "./Button"
-import { Input } from "./Inputcomponent"
+ import { Button } from "./Button"
+ import { Input } from "./Inputcomponent"
 interface CreateContentModalprops{
     open:boolean;
     onClose:()=>void
@@ -21,3 +21,4 @@ export const CreateContentModal=(props:CreateContentModalprops)=>{
         </>
     ) 
 }
+
