@@ -1,5 +1,6 @@
 import { Shareicon } from "../icons/shareicon";
 import { Trashicon } from "../icons/trashicon";
+import { Youtubeicon } from "../icons/Yourubeicon";
 
 
 interface Cardprops {
@@ -21,9 +22,9 @@ export const Cardcomponent = (props: Cardprops) => {
             <div className="flex justify-between pt-3 px-3">
                 <div className="flex items-center">
                     <a href={props.link} target="_blank">
-                    <div><Shareicon /></div>
+                    <div ><Youtubeicon varient="sm"/></div>
                     </a>
-                     <div className="text-sm">{props.title}</div>
+                     <div className="text-sm pl-3">{props.title}</div>
                 </div>
                 <div className="flex text-gray-600 items-center">
                     <div className="pr-3"><Trashicon /></div>
