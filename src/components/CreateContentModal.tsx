@@ -12,8 +12,9 @@ export const CreateContentModal=(props:CreateContentModalprops)=>{
             <div className="flex justify-center translate-y-48 ">
                 <span className="bg-white px-8 py-4 rounded-xl">
                     <div className="flex justify-end cursor-pointer" onClick={props.onClose} ><Closeicon/></div>
-                    <div ><Input placeholder="link"/></div>
-                    <div ><Input placeholder="type"/></div>
+                    <div><Input placeholder="Title"/></div>
+                    <div ><Input placeholder="Link"/></div>
+                    <div ><Input placeholder="Type"/></div>
                     <div className="flex justify-center"><Button varient="primary" text="Add"  onClick={props.onClose}/></div>
                 </span>
             </div>        
